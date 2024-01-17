@@ -4,5 +4,4 @@ metadata:
     
 run:
   steps:
-  - lava-test-case curl-http --shell curl -uueunji:Dmswl6646! -O http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz
-  - lava-test-case tar-tgz --shell tar -xvzf img.tar.gz
+
