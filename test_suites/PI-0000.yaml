@@ -9,6 +9,7 @@ run:
   steps:
   - chmod 777 ./*
   - cd ./scripts
+  - chmod 777 ./*
   - ./PI-0000.sh
   - cp ./PI-0000.sh ../../../../tests/
   - cp ./PI-0000.log ../../../../results/
