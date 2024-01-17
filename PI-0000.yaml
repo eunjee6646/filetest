@@ -1,7 +1,0 @@
-metadata: 
-    format: Lava-Test Definition
-    name: PI-0000
-    
-run:
-  steps:
-
