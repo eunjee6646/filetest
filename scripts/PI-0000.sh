@@ -69,7 +69,7 @@ CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "cd ./sdk" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`cd ./sdk/ | tee -a $TEST_LOG` &>/dev/null
+CONSOLE_LOG=`cd ./sdk | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
