@@ -61,8 +61,8 @@ TEST_FAIL_PAT=""
 CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "cd ./sdk" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`cd ./sdk | tee -a $TEST_LOG` &>/dev/null
+echo "cd sdk/" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`cd sdk/ | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
@@ -78,6 +78,13 @@ CHECK_RESULT
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "chmod 777 ./*" | tee -a $TEST_LOG &>/dev/null
 CONSOLE_LOG=`chmod 777 ./* | tee -a $TEST_LOG` &>/dev/null
+TEST_PASS_PAT=""
+TEST_FAIL_PAT=""
+CHECK_RESULT
+
+echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+echo "ls -al" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`ls -al | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
