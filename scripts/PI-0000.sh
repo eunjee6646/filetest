@@ -46,6 +46,7 @@ TEST_PASS_PAT="Resolving"
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
+echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "tar -xvzf sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
 CONSOLE_LOG=`tar -xvzf sdk.tar.gz  | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT="sdk/"
@@ -53,19 +54,32 @@ TEST_FAIL_PAT=""
 CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "cd ./sdk/ff_all.sh" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`cd ./sdk/ff_all.sh | tee -a $TEST_LOG` &>/dev/null
+echo "pwd" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`pwd | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT="Sending"
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
+echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+echo "cd ./sdk/" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`cd ./sdk | tee -a $TEST_LOG` &>/dev/null
+TEST_PASS_PAT=""
+TEST_FAIL_PAT=""
+CHECK_RESULT
 
-#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-#echo "./ff_all.sh" | tee -a $TEST_LOG &>/dev/null
-#CONSOLE_LOG=`./ff_all.sh | tee -a $TEST_LOG` &>/dev/null
-#TEST_PASS_PAT="Sending"
-#TEST_FAIL_PAT=""
-#CHECK_RESULT
+echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+echo "pwd" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`pwd | tee -a $TEST_LOG` &>/dev/null
+TEST_PASS_PAT="Sending"
+TEST_FAIL_PAT=""
+CHECK_RESULT
+
+echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+echo "./ff_all.sh" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`./ff_all.sh | tee -a $TEST_LOG` &>/dev/null
+TEST_PASS_PAT="Sending"
+TEST_FAIL_PAT=""
+CHECK_RESULT
 
 ### Test Result - Do not Update
 if [ $FAIL_COUNT -eq 0 ];then
