@@ -10,11 +10,7 @@ run:
   - chmod 777 ./*
   - cd ./scripts
   - chmod 777 ./*
-  - wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz
-  - tar -xvzf sdk.tar.gz
-  - cd ./sdk
-  - pwd
-  - ../PI-0000.sh
+  - ./PI-0000.sh
   - cp ./PI-0000.sh ../../../../tests/
   - cp ./PI-0000.log ../../../../results/
   - cp ./PI-0000.out ../../../../results/
