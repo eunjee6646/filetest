@@ -59,12 +59,6 @@ TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "pwd" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`pwd | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT="/home/root/sdk/"
-TEST_FAIL_PAT=""
-CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "./ff_all.sh" | tee -a $TEST_LOG &>/dev/null
