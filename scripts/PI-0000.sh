@@ -7,7 +7,7 @@
 
 ### Automatic generation - Do not Update
 TEST_ID="PI-0000"
-PROMPT_MSG="root@lava:/#"
+PROMPT_MSG="root@lava:"
 TEST_LOG="${TEST_ID}.log"
 TEST_OUT="TestCase_Result.txt"
 FAIL_COUNT=0
