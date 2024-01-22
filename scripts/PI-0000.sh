@@ -42,7 +42,7 @@ fi
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
 CONSOLE_LOG=`wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT="Resolving"
+TEST_PASS_PAT="saved"
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
