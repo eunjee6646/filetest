@@ -40,21 +40,21 @@ fi
 
 ### Test Sequence - Update
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "wget http://ueunji:'Dmswl6646!'@cnst.coasianexell.com:8082/artifactory/IVI.POC_released/SDK/sdk-1.1-BL.tar.gz" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`wget http://ueunji:'Dmswl6646!'@cnst.coasianexell.com:8082/artifactory/IVI.POC_released/SDK/sdk-1.1-BL.tar.gz | tee -a $TEST_LOG` &>/dev/null
+echo "wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT="Resolving"
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
-echo "tar -xvzf sdk-1.1-BL.tar.gz" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`tar -xvzf sdk-1.1-BL.tar.gz  | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT="euto-v920-sadk/"
+echo "tar -xvzf sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`tar -xvzf sdk.tar.gz  | tee -a $TEST_LOG` &>/dev/null
+TEST_PASS_PAT="sdk/"
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "cd ./euto-v920-sadk/" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`cd ./euto-v920-sadk/ | tee -a $TEST_LOG` &>/dev/null
+echo "cd ./sdk" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`cd ./sdk | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
@@ -62,7 +62,7 @@ CHECK_RESULT
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "pwd" | tee -a $TEST_LOG &>/dev/null
 CONSOLE_LOG=`pwd | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT="/home/root/euto-v920-sadk/"
+TEST_PASS_PAT="/home/root/sdk/"
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
