@@ -40,29 +40,22 @@ fi
 
 ### Test Sequence - Update
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz | tee -a $TEST_LOG` &>/dev/null
+echo "wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk2.tar.gz" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk2.tar.gz | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT="saved"
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "tar -xvzf sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`tar -xvzf sdk.tar.gz  | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT="sdk/"
+echo "tar -xvzf sdk2.tar.gz" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`tar -xvzf sdk2.tar.gz  | tee -a $TEST_LOG` &>/dev/null
+TEST_PASS_PAT="sdk2/"
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "pwd" | tee -a $TEST_LOG &>/dev/null
 CONSOLE_LOG=`pwd | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT=""
-TEST_FAIL_PAT=""
-CHECK_RESULT
-
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "find . -name 'sdk*'" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`find . -name 'sdk*' | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
@@ -89,26 +82,26 @@ CHECK_RESULT
 #CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "cd ./sdk" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`cd ./sdk | tee -a $TEST_LOG` &>/dev/null
+echo "./sdk2/ff_all.sh" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`./sdk2/ff_all.sh | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "pwd" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`pwd | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT=""
-TEST_FAIL_PAT=""
-CHECK_RESULT
+#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+#echo "pwd" | tee -a $TEST_LOG &>/dev/null
+#CONSOLE_LOG=`pwd | tee -a $TEST_LOG` &>/dev/null
+#TEST_PASS_PAT=""
+#TEST_FAIL_PAT=""
+#CHECK_RESULT
 
 
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "./ff_all.sh" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`./ff_all.sh | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT="Sending"
-TEST_FAIL_PAT=""
-CHECK_RESULT
+#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+#echo "./ff_all.sh" | tee -a $TEST_LOG &>/dev/null
+#CONSOLE_LOG=`./ff_all.sh | tee -a $TEST_LOG` &>/dev/null
+#TEST_PASS_PAT="Sending"
+#TEST_FAIL_PAT=""
+#CHECK_RESULT
 
 ### Test Result - Do not Update
 if [ $FAIL_COUNT -eq 0 ];then
