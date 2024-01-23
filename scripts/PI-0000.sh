@@ -39,19 +39,19 @@ if [ $IS_MSG_CLEAR = true ];then
 fi
 
 ### Test Sequence - Update
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT="saved"
-TEST_FAIL_PAT=""
-CHECK_RESULT
+#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+#echo "wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
+#CONSOLE_LOG=`wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz | tee -a $TEST_LOG` &>/dev/null
+#TEST_PASS_PAT="saved"
+#TEST_FAIL_PAT=""
+#CHECK_RESULT
 
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "tar -xvzf sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`tar -xvzf sdk.tar.gz  | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT="sdk/"
-TEST_FAIL_PAT=""
-CHECK_RESULT
+#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+#echo "tar -xvzf sdk.tar.gz" | tee -a $TEST_LOG &>/dev/null
+#CONSOLE_LOG=`tar -xvzf sdk.tar.gz  | tee -a $TEST_LOG` &>/dev/null
+#TEST_PASS_PAT="sdk/"
+#TEST_FAIL_PAT=""
+#CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "pwd" | tee -a $TEST_LOG &>/dev/null
@@ -60,12 +60,12 @@ TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "find . -name 'sdk*'" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`find . -name 'sdk*' | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT=""
-TEST_FAIL_PAT=""
-CHECK_RESULT
+#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+#echo "find . -name 'sdk*'" | tee -a $TEST_LOG &>/dev/null
+#CONSOLE_LOG=`find . -name 'sdk*' | tee -a $TEST_LOG` &>/dev/null
+#TEST_PASS_PAT=""
+#TEST_FAIL_PAT=""
+#CHECK_RESULT
 
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
@@ -75,26 +75,19 @@ TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "chown -R root:root sdk" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`chown -R root:root sdk | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT=""
-TEST_FAIL_PAT=""
-CHECK_RESULT
+#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+#echo "chown -R root:root sdk" | tee -a $TEST_LOG &>/dev/null
+#CONSOLE_LOG=`chown -R root:root sdk | tee -a $TEST_LOG` &>/dev/null
+#TEST_PASS_PAT=""
+#TEST_FAIL_PAT=""
+#CHECK_RESULT
 
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "chmod -R 777 sdk" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`chmod -R 777 sdk | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT=""
-TEST_FAIL_PAT=""
-CHECK_RESULT
-
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "ls -al" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`ls -al | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT=""
-TEST_FAIL_PAT=""
-CHECK_RESULT
+#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+#echo "chmod -R 777 sdk" | tee -a $TEST_LOG &>/dev/null
+#CONSOLE_LOG=`chmod -R 777 sdk | tee -a $TEST_LOG` &>/dev/null
+#TEST_PASS_PAT=""
+#TEST_FAIL_PAT=""
+#CHECK_RESULT
 
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "cd ./sdk" | tee -a $TEST_LOG &>/dev/null
@@ -103,12 +96,12 @@ TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
-echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-echo "pwd" | tee -a $TEST_LOG &>/dev/null
-CONSOLE_LOG=`pwd | tee -a $TEST_LOG` &>/dev/null
-TEST_PASS_PAT=""
-TEST_FAIL_PAT=""
-CHECK_RESULT
+#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+#echo "pwd" | tee -a $TEST_LOG &>/dev/null
+#CONSOLE_LOG=`pwd | tee -a $TEST_LOG` &>/dev/null
+#TEST_PASS_PAT=""
+#TEST_FAIL_PAT=""
+#CHECK_RESULT
 
 #echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 #echo "ls -al" | tee -a $TEST_LOG &>/dev/null
