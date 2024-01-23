@@ -8,6 +8,7 @@ metadata:
 run:
   steps:
   - chmod -R 777 ./*
+  - ls -al
   - cd ./scripts
   - ./PI-0000.sh
   - cp ./PI-0000.sh ../../../../tests/
