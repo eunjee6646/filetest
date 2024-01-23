@@ -11,7 +11,10 @@ run:
   - cd ./scripts
   - wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz
   - tar -xvzf sdk.tar.gz
+  - pwd
+  - ls -al  
   - cd ./sdk
+  - pwd
   - ../PI-0000.sh
   - cp ../PI-0000.sh ../../../../../tests/
   - cp ../PI-0000.log ../../../../../results/
