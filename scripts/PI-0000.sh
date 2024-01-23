@@ -67,16 +67,16 @@ TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
 
-#echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
-#echo "chown -R root:root sdk" | tee -a $TEST_LOG &>/dev/null
-#CONSOLE_LOG=`chown -R root:root sdk | tee -a $TEST_LOG` &>/dev/null
-#TEST_PASS_PAT=""
-#TEST_FAIL_PAT=""
-#CHECK_RESULT
-
 echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
 echo "chmod -R 777 sdk" | tee -a $TEST_LOG &>/dev/null
 CONSOLE_LOG=`chmod -R 777 sdk | tee -a $TEST_LOG` &>/dev/null
+TEST_PASS_PAT=""
+TEST_FAIL_PAT=""
+CHECK_RESULT
+
+echo -n "$PROMPT_MSG " | tee -a $TEST_LOG &>/dev/null
+echo "chown -R root:root sdk" | tee -a $TEST_LOG &>/dev/null
+CONSOLE_LOG=`chown -R root:root sdk | tee -a $TEST_LOG` &>/dev/null
 TEST_PASS_PAT=""
 TEST_FAIL_PAT=""
 CHECK_RESULT
