@@ -12,10 +12,10 @@ run:
   - wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz
   - tar -xvzf sdk.tar.gz
   - cd ./sdk
-  - ./PI-0000.sh
-  - cp ./PI-0000.sh ../../../../tests/
-  - cp ./PI-0000.log ../../../../results/
-  - cp ./PI-0000.out ../../../../results/
-  - cat ./PI-0000.out | tail -n 1 >> ../../../../results/result.txt
-  - cd ../test_suites
-  - cp ./PI-0000.yaml ../../../../tests/
+  - ../PI-0000.sh
+  - cp ../PI-0000.sh ../../../../../tests/
+  - cp ../PI-0000.log ../../../../../results/
+  - cp ../PI-0000.out ../../../../../results/
+  - cat ../PI-0000.out | tail -n 1 >> ../../../../../results/result.txt
+  - cd ../../test_suites
+  - cp ../PI-0000.yaml ../  ../../../../tests/
