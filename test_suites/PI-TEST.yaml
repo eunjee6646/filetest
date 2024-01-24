@@ -10,7 +10,6 @@ run:
   - chmod -R 777 ./*
   - ls -al
   - cd ./scripts
-  - lava-test-case install --shell apt install -y wget
   - lava-test-case install2 --shell wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz
   - lava-test-case tar-rgz --shell tar -xvzf sdk.tar.gz
   - pwd
