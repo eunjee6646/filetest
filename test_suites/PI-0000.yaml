@@ -10,6 +10,7 @@ run:
   - chmod -R 777 ./*
   - ls -al
   - cd ./scripts
+  - apt-get install -y wget
   - ./PI-0000.sh
   - cp ./PI-0000.sh ../../../../tests/
   - cp ./PI-0000.log ../../../../results/
