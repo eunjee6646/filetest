@@ -6,7 +6,7 @@
 # E-MAIL : <EMAIL>
 
 ### Automatic generation - Do not Update
-TEST_ID="PI-0000"
+TEST_ID="PI-TEST"
 PROMPT_MSG="root@lava:/#"
 TEST_LOG="${TEST_ID}.log"
 TEST_OUT="TestCase_Result.txt"
