@@ -20,4 +20,3 @@ run:
   - pwd
   - ls -al
   - lava-test-case script --shell ./ff_all.sh
-  - cp ./PI-TEST.log ../../../../results/
