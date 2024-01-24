@@ -1,0 +1,20 @@
+metadata: 
+    format: Lava-Test Definition
+    name: PI-TEST
+    devices:
+    - v920-test1
+    os:
+    - debian
+run:
+  steps:
+  - chmod -R 777 ./*
+  - ls -al
+  - cd ./scripts
+  - apt install -y wget
+  - wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz
+  - tar -xvzf sdk.tar.gz
+  - pwd
+  - ls -al  
+  - cd ./sdk
+  - ./ff_all.sh
+  - cp ./PI-0000.log ../../../../results/
