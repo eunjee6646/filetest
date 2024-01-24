@@ -18,8 +18,8 @@ run:
   - chmod -R 777 ./* 
   - chown -R root:root ./*
   - ls -al
-  - lava-test-shell cd ./sdk
+  - cd ./sdk
   - pwd
   - ls -al
-  - lava-test-shell ./ff_all.sh
+  - lava-test-cast script --shell ./ff_all.sh
   - cp ./PI-TEST.log ../../../../results/
