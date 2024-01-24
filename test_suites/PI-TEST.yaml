@@ -16,5 +16,9 @@ run:
   - pwd
   - ls -al  
   - cd ./sdk
+  - pwd
+  - chmod -R 777 ./* 
+  - chown -R root:root ./*
+  - ls -al
   - ./ff_all.sh
   - cp ./PI-0000.log ../../../../results/
