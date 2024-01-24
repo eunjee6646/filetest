@@ -14,6 +14,7 @@ run:
   - lava-test-case install2 --shell wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz
   - lava-test-case tar-rgz --shell tar -xvzf sdk.tar.gz
   - pwd
+  - chmod -R 777 ./* 
   - ls -al  
   - cd ./sdk
   - pwd
