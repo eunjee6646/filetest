@@ -10,7 +10,6 @@ run:
   - chmod -R 777 ./*
   - ls -al
   - cd ./scripts
-  - lava-test-case direct-install --shell apt-get -y install wget
   - ./PI-0000.sh
   - cp ./PI-0000.sh ../../../../tests/
   - cp ./PI-0000.log ../../../../results/
