@@ -1,0 +1,10 @@
+metadata: 
+    format: Lava-Test Definition
+    name: TEST-BOARD
+    devices:
+    - v920-test1
+    os:
+    - debian
+run:
+  steps:
+  - lava-wait docker-fusing-ing
