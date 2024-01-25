@@ -7,4 +7,7 @@ metadata:
     - debian
 run:
   steps:
-  - lava-wait 1244	
+  - lava-test-case multinode-group --shell lava-group
+  - lava-test-case bootlog --shell bootlog
+  - lava-test-case enter-fast-boot --shell fast 0
+  - lava-wait Rebooting 	
