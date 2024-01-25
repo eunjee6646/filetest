@@ -2,7 +2,7 @@ metadata:
     format: Lava-Test Definition
     name: PI-TEST
     devices:
-    - v920-test1
+    - docker01
     os:
     - debian
 run:
