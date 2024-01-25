@@ -7,4 +7,4 @@ metadata:
     - debian
 run:
   steps:
-  - lava-wait docker-fusing-ing
+  - lava-wait 1244	
