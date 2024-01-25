@@ -19,4 +19,5 @@ run:
   - pwd
   - ls -al
   - lava-test-case script --shell ./ff_all.sh
-  - lava-test-case check-wait --shell lava-wait fastboot_init success!! 
+  - lava-send Rebooting
+
