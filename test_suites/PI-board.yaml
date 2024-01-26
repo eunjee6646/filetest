@@ -1,0 +1,19 @@
+metadata: 
+    format: Lava-Test Definition
+    name: PI-board
+    devices:
+    - v920-test1
+    os:
+    - debian
+run:
+  steps:
+  - chmod -R 777 ./*
+  - ls -al
+  - cd ./scripts
+  - ./PI-0000.sh
+  - cp ./PI-0000.sh ../../../../tests/
+  - cp ./PI-0000.log ../../../../results/
+  - cp ./PI-0000.out ../../../../results/
+  - cat ./PI-0000.out | tail -n 1 >> ../../../../results/result.txt
+  - cd ../test_suites
+  - cp ./PI-0000.yaml  ../../../../tests/
