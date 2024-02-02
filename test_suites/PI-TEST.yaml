@@ -14,7 +14,7 @@ run:
   - lava-test-case tar-rgz --shell tar -xvzf sdk.tar.gz
   - pwd
   - chmod -R 777 ./* 
-  - chown -R 777 ./*
+  - chown -R root:root ./*
   - ls -al  
   - cd ./sdk
   - pwd
