@@ -20,4 +20,5 @@ run:
   - pwd
   - ls -al
   - lava-test-case script --shell ./ff_all.sh
+  - lava-test-case exit --shell echo $'\cc' > /dev/ttyUSB0
  
