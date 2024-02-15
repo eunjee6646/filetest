@@ -10,13 +10,13 @@ run:
   - chmod -R 777 ./*
   - ls -al
   - cd ./scripts
-  - lava-test-case install2 --shell wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk.tar.gz
-  - lava-test-case tar-rgz --shell tar -xvzf sdk.tar.gz
+  - lava-test-case install2 --shell wget http://cnst.coasianexell.com:8082/artifactory/open_test/sdk2.tar.gz
+  - lava-test-case tar-rgz --shell tar -xvzf sdk2.tar.gz
   - pwd
   - chmod -R 777 ./* 
   - chown -R root:root ./*
   - ls -al  
-  - cd ./sdk
+  - cd ./sdk2
   - pwd
   - ls -al
   - lava-test-case script --shell ./ff_all.sh
