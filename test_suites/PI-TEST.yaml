@@ -10,8 +10,8 @@ run:
   - chmod -R 777 ./*
   - ls -al
   - cd ./scripts
-  - lava-test-case install2 --shell wget http://ueunji:Dmswl6646!@cnst.coasianexell.com:8082/artifactory/IVI.POC_released/SDK/sdk-1.1-BL.tar.gz
-  - lava-test-case tar-rgz --shell tar -xvzf sdk-1.1-BL.tar.gz
+  - lava-test-case install2 --shell wget http://ueunji:Dmswl6646!@cnst.coasianexell.com:8082/artifactory/IVI.POC_released/SDK/sdk-1.1.1-BL.tar.gz
+  - lava-test-case tar-rgz --shell tar -xvzf sdk-1.1.1-BL.tar.gz
   - pwd
   - chmod -R 777 ./* 
   - chown -R root:root ./*
