@@ -1,0 +1,11 @@
+metadata: 
+    format: Lava-Test Definition
+    name: multinode2
+    devices:
+    - v920
+    os:
+    - oe
+run:
+  steps:
+  - lava-send lava-start
+  - lava-sync done 
