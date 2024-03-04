@@ -1,0 +1,11 @@
+metadata: 
+    format: Lava-Test Definition
+    name: multinode1
+    devices:
+    - docker01
+    os:
+    - debian
+run:
+  steps:
+  - lava-wait lava-start
+  - lava-sync done
