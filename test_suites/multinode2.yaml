@@ -7,6 +7,5 @@ metadata:
     - oe
 run:
   steps:
-  - lava-wait lava-start
   - lava-send test-complete
   
