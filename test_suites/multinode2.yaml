@@ -8,6 +8,5 @@ metadata:
 run:
   steps:
   - lava-wait lava-start
-  - lava-sync done 
   - lava-send test-complete
   
