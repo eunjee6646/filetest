@@ -7,4 +7,4 @@ metadata:
     - oe
 run:
   steps:
-  - lava-sync done2
+  - lava-sync done
