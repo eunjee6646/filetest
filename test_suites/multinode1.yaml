@@ -7,5 +7,6 @@ metadata:
     - debian
 run:
   steps:
+  - lava-sync done1
   - lava-wait test-complete
-  - lava-sync done
+  - lava-sync done2
