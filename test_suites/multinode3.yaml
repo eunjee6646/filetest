@@ -7,6 +7,5 @@ metadata:
     - oe
 run:
   steps:
-  - lava-sync done
   - lava-send test-complete
   - lava-sync done2
