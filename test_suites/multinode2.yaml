@@ -7,5 +7,6 @@ metadata:
     - oe
 run:
   steps:
-  - lava-wait lava-start
+  - lava-wait docker-complete
+  - lava-sync done
 
