@@ -1,4 +1,4 @@
-metadata: 
+wmetadata: 
     format: Lava-Test Definition
     name: multinode1
     devices:
@@ -8,5 +8,6 @@ metadata:
 run:
   steps:
   - lava-send docker-complete
+  - lava-sync done
   - lava-wait test-complete
-
+  - lava-sync done2
