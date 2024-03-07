@@ -8,5 +8,4 @@ metadata:
 run:
   steps:
   - lava-wait docker-complete
-  - lava-sync done
 
