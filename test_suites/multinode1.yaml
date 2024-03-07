@@ -8,6 +8,6 @@ metadata:
 run:
   steps:
   - lava-send docker-complete
-  - lava-sync done
   - lava-wait test-complete
+  - lava-sync done
   - lava-sync done2
