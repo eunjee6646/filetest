@@ -9,4 +9,3 @@ run:
   steps:
   - lava-send test-complete
   - lava-sync done
-  - lava-sync done2
