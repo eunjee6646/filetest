@@ -9,4 +9,4 @@ run:
   steps:
   - lava-send docker-complete
   - lava-wait test-complete
-  - lava-sync done
+
