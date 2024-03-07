@@ -10,4 +10,4 @@ run:
   - lava-send docker-complete
   - lava-wait test-complete
   - lava-sync done
-  - lava-sync done2
+
